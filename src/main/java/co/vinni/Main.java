@@ -9,7 +9,7 @@ public class Main {
         System.out.println(" Proyecto base tipo Maven-Java");
 
         Operaciones op = new Operaciones();
-        long resultado = op.sumar(2,2);
+        long resultado = op.sumar("2","2");
         System.out.println(resultado);
 
     }
