@@ -12,5 +12,8 @@ public class Main {
         long resultado = op.sumar("2","2");
         System.out.println(resultado);
 
+        long r = op.multiplicar(2);
+        System.out.println(r);
+
     }
 }
