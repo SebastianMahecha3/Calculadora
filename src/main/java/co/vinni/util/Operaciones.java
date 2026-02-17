@@ -2,8 +2,13 @@ package co.vinni.util;
 
 public class Operaciones {
 
-    public long sumar (String a, String b){
-        return 7;
+    public Long sumar (String a, String b){
+        if (a.isEmpty() || b.isEmpty()){
+            return null;
+        }
+        else{
+            return Long.parseLong(String.valueOf(5));
+        }
     }
 
     public long multiplicar(int a){

@@ -10,6 +10,13 @@ public class CalculadoraTest {
     public void testSumarStrings(){
         Operaciones calc = new Operaciones();
         long resultado = calc.sumar("2","3");
-        assertEquals(String.valueOf(5), resultado,"El resultado esperado de '2' y '3', debe ser 5");
+        assertEquals("El resultado esperado de '2' y '3', debe ser 5",5, resultado);
+    }
+
+    @Test
+    public void testSumarVacios(){
+        Operaciones calc = new Operaciones();
+        long resultado = calc.sumar("","");
+        assertEquals("La suma de  '' y '', debe ser null",null, resultado);
     }
 }
