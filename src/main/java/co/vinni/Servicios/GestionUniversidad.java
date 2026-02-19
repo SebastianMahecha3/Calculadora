@@ -2,6 +2,12 @@ package co.vinni.Servicios;
 
 import co.vinni.DTO.Docentes;
 import co.vinni.DTO.Universidad;
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Getter
+@Setter
 
 public class GestionUniversidad {
     private Universidad laUniversidad;
