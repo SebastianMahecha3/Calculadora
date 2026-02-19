@@ -2,21 +2,28 @@ package co.vinni.util;
 
 public class Operaciones {
 
-    public Long sumar (String a, String b){
-        if (a.isEmpty() || b.isEmpty()){
+    public Long sumar(String a, String b) {
+
+        if (a == null || b == null || a.isEmpty() || b.isEmpty()) {
             return null;
         }
-        else{
-            return Long.parseLong(String.valueOf(5));
-        }
+
+        Long num1 = Long.parseLong(a);
+        Long num2 = Long.parseLong(b);
+
+        return num1 + num2;
     }
 
-    public long multiplicar(int a){
-        long m =0;
-        for (int c=0;c<5;c++){
-            long n=a+a;
-            m= n;
+
+    public long multiplicar(int a, int b) {
+
+        long resultado = 0;
+
+        for (int i = 0; i < b; i++) {
+            resultado += a;
         }
-        return m;
+
+        return resultado;
     }
+
 }

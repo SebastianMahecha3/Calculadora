@@ -16,7 +16,7 @@ public class CalculadoraTest {
     @Test
     public void testSumarVacios(){
         Operaciones calc = new Operaciones();
-        long resultado = calc.sumar("","");
+        Long resultado = calc.sumar("","");
         assertEquals("La suma de  '' y '', debe ser null",null, resultado);
     }
 }
